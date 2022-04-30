@@ -11,8 +11,29 @@ const Ul = styled.ul`
 
   li {
     &:hover > a {
-      background: var(--primary-light);
-      color: var(--primary-dark);
+      background: hsla(308, 100%, 25%, 1);
+
+      background: linear-gradient(
+        180deg,
+        hsla(308, 100%, 25%, 1) 0%,
+        hsla(213, 38%, 24%, 1) 68%,
+        hsla(308, 100%, 25%, 1) 100%
+      );
+
+      background: -moz-linear-gradient(
+        180deg,
+        hsla(308, 100%, 25%, 1) 0%,
+        hsla(213, 38%, 24%, 1) 68%,
+        hsla(308, 100%, 25%, 1) 100%
+      );
+
+      background: -webkit-linear-gradient(
+        180deg,
+        hsla(308, 100%, 25%, 1) 0%,
+        hsla(213, 38%, 24%, 1) 68%,
+        hsla(308, 100%, 25%, 1) 100%
+      );
+      color: var(--primary-light);
       transition: all 0.3s ease-in-out;
     }
     a,
@@ -24,7 +45,8 @@ const Ul = styled.ul`
       border-radius: 0.25rem;
       text-transform: uppercase;
       letter-spacing: 2px;
-      color: var(--primary-light);
+      color: var(--primary-dark);
+      margin-right: 1rem;
     }
   }
 
@@ -36,7 +58,7 @@ const Ul = styled.ul`
     top: 0;
     right: 0;
     height: 100vh;
-    min-width: 12rem;
+    max-width: 10rem;
     padding-top: 3.5rem;
     transition: transform 0.3s ease-in-out;
     justify-content: center;
@@ -44,10 +66,6 @@ const Ul = styled.ul`
 
     li {
       margin: 3rem 0;
-      &:hover > a {
-        background: var(--primary-dark);
-        color: var(--primary-light);
-      }
       a,
       a:before,
       a:after {
@@ -67,13 +85,13 @@ const RightNav = ({ open }) => {
         <a href="/">Home</a>
       </li>
       <li>
-        <a href="/about">About Us</a>
+        <a href="#about">About</a>
       </li>
       <li>
-        <a href="/services"> Services</a>
+        <a href="#services"> Services</a>
       </li>
       <li>
-        <a href="/contact">Contact Us</a>
+        <a href="#contact">Contact </a>
       </li>
     </Ul>
   );
