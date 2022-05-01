@@ -8,7 +8,6 @@ import design2 from "../../assets/img/webdev.png";
 import bkgPattern from "../../assets/img/bg-pattern-desktop.svg";
 
 const StyledComposition = styled(Grid)`
-  grid-area: compsition;
   grid-gap: 2rem;
   align-items: center;
   justify-content: center;
@@ -19,6 +18,7 @@ const StyledComposition = styled(Grid)`
   background-position: top;
   padding: 6rem 0;
   border-radius: 20%;
+  transform: skewY(7deg);
 
   .composition__photo {
     max-width: 20rem;
@@ -44,8 +44,10 @@ const StyledComposition = styled(Grid)`
     -webkit-transform: scale(0.95);
     transform: scale(0.95);
   }
-  @media screen and (max-width: 600px){
-      /* height: 80%; */
+  @media (min-width: 900) {
+    .composition__photo {
+      max-width: 10rem;
+    }
   }
 `;
 

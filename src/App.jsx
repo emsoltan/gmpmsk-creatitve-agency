@@ -1,10 +1,11 @@
 import React from "react";
 import "./App.css";
-import { Typography, Grid } from "@mui/material";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Header from "./components/01-Header/Header";
-import Hero from "./components/02-Hero/Hero"
-import About from "./components/03-About/About"
+import Hero from "./components/02-Hero/Hero";
+import About from "./components/03-About/About";
+import Services from "./components/04-Services/Services";
+import Contact from "./components/06-Contact/Contact"
 const App = () => {
   const theme = createTheme({
     palette: {
@@ -39,11 +40,12 @@ const App = () => {
   });
   return (
     <ThemeProvider theme={theme}>
-        <Header />
+      <Header />
       <main>
-        <Hero/>
-        <About/>
-      
+        <Hero />
+        <About />
+        <Services/>
+        <Contact/>
       </main>
     </ThemeProvider>
   );

@@ -2,7 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import { Button, Typography } from "@mui/material";
 import Composition from "./HeroComposition";
-import bkgLG from "../../assets/img/bg-intro-mobile.svg";
+import bkgPattern from "../../assets/img/bg-pattern-desktop.svg";
+
 
 const StyledIntro = styled.div`
   height: 90%;
@@ -25,6 +26,9 @@ const StyledIntro = styled.div`
     text-shadow: 10px 10px 20px rgba(0, 0, 0, 0.8);
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.8);
     border-radius: 2rem;
+    background: url(${bkgPattern});
+    background-size: cover;
+    background-position: center;
   }
   span {
     display: inline-block;
@@ -44,6 +48,7 @@ const StyledIntro = styled.div`
     margin-top: 1rem;
     animation: moveInBottom 1s ease-in-out;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.8);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.35);
   }
   @media screen and (max-width: 900px) {
     justify-content: space-around;

@@ -11,7 +11,7 @@ const Ul = styled.ul`
 
   li {
     &:hover > a {
-      background: hsla(308, 100%, 25%, 1);
+      background: var(--main-gradient);
 
       background: linear-gradient(
         180deg,

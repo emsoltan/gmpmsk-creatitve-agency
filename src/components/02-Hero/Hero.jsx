@@ -17,7 +17,7 @@ const StyledHero = styled.div`
   background-repeat: no-repeat;
   clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
   backface-visibility: none;
-  margin-bottom: 10rem;
+  margin-bottom: 15rem;
 `;
 
 const Hero = () => {
