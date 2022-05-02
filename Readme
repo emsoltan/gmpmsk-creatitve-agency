@@ -1,0 +1,19 @@
+Project Overview :
+
+- This is a starting project to serve s an Ecommerce platform at a later stage. 
+- Objective is to have digital presence and serve as a reference for the artist's freelance work.
+
+Phase1: 
+- Static SPA landing page with sameples and contact.
+
+Phase2:
+- Upgrade to an MPA with payment options enabled, once company's registeration and legal requirements are finalized.
+
+Technologies:
+- React.js v18
+    - Material UI
+    - Styled Components
+    - CSS3/ SASS
+    - React Icons
+  
+  ***** this is the creator's sandbox, using different techniques and technologies in combination.
