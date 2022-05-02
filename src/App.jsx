@@ -6,6 +6,7 @@ import Hero from "./components/02-Hero/Hero";
 import About from "./components/03-About/About";
 import Services from "./components/04-Services/Services";
 import Contact from "./components/06-Contact/Contact"
+import Footer from "./components/07-Footer/Footer"
 const App = () => {
   const theme = createTheme({
     palette: {
@@ -47,6 +48,7 @@ const App = () => {
         <Services/>
         <Contact/>
       </main>
+      <Footer/>
     </ThemeProvider>
   );
 };

@@ -28,10 +28,10 @@ const ContactForm = styled.div`
         font-size: 1.5rem;
         color: var(--primary-light);
         margin: 1rem;
-        padding: .5rem .75rem;
-        border-radius: .5rem ;
+        padding: 0.5rem 0.75rem;
+        border-radius: 0.5rem;
         text-transform: uppercase;
-        text-shadow: 5px 5px 5px rgba(255, 255, 255, 0.35);
+        text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.35);
         letter-spacing: 2px;
         width: max-content;
         box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.8);
@@ -49,6 +49,7 @@ const ContactForm = styled.div`
           font-size: 1rem;
           text-transform: uppercase;
           padding-left: 0.75rem;
+          text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.35);
         }
       }
       input:last-child {
@@ -64,12 +65,18 @@ const ContactForm = styled.div`
         box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.8);
         text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.35);
         border-radius: 0.75rem;
+        cursor: pointer;
+        :hover {
+          background-color: var(--mag-light);
+          transition: all .3s ease-in-out;
+        }
       }
-      input, input:before, input:after {
-          outline: none;
+      input,
+      input:before,
+      input:after {
+        outline: none;
       }
       .custom-select {
-        
         select {
           margin: 2rem 0;
           background-color: var(--primary-light);
@@ -127,12 +134,7 @@ const Contact = () => {
           </div>
 
           <label htmlFor="message">Message</label>
-          <textarea
-            value=""
-            onChange={onSubmitHandler}
-            rows="20"
-            cols="100"
-          />
+          <textarea value="" onChange={onSubmitHandler} rows="20" cols="100" />
 
           <input type="submit" value="Submit" />
         </form>
