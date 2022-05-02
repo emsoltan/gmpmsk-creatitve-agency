@@ -79,7 +79,7 @@ const Intro = () => {
       </Typography>
       <Composition />
       <Button variant="contained" color="warning" size="large" href="#services">
-        See More
+        Read more
       </Button>
     </StyledIntro>
   );
