@@ -73,12 +73,12 @@ const StyledIntro = styled.div`
 const Intro = () => {
   return (
     <StyledIntro>
-      <Typography sm variant="h1" component="h1" color="background.paper">
+      <Typography  variant="h1" component="h1" color="background.paper">
         GMPMSK <span>Creative Agency</span>
         <Typography variant="body1">Your brand's one-stop-shop</Typography>
       </Typography>
       <Composition />
-      <Button variant="contained" color="warning" size="large">
+      <Button variant="contained" color="warning" size="large" href="#services">
         See More
       </Button>
     </StyledIntro>

@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Button } from "@mui/material";
 import bkgPattern from "../../assets/img/bg-pattern-desktop.svg";
 
 const onSubmitHandler = (e) => e.preventDefault();
@@ -52,24 +53,16 @@ const ContactForm = styled.div`
           text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.35);
         }
       }
-      input:last-child {
-        padding: 1rem 2rem;
-        min-width: 20%;
-        margin: 1rem auto;
-        font-size: 1.5rem;
-        color: var(--primary-light);
+      .MuiButton-root {
+        font-size: 1.6rem;
+        min-width: 35%;
+        letter-spacing: 3px;
         font-weight: 600;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        background-color: var(--tang);
+        color: var(--primary-light);
+        margin: 1rem auto;
+        animation: moveInBottom 1s ease-in-out;
         box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.8);
         text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.35);
-        border-radius: 0.75rem;
-        cursor: pointer;
-        :hover {
-          background-color: var(--mag-light);
-          transition: all .3s ease-in-out;
-        }
       }
       input,
       input:before,
@@ -112,7 +105,6 @@ const Contact = () => {
             name="firstname"
             placeholder="Your name.."
           />
-
           <label htmlFor="lname">Last Name</label>
           <input
             type="text"
@@ -132,11 +124,17 @@ const Contact = () => {
               <option value="web development">Other</option>
             </select>
           </div>
-
           <label htmlFor="message">Message</label>
           <textarea value="" onChange={onSubmitHandler} rows="20" cols="100" />
-
-          <input type="submit" value="Submit" />
+          <Button
+            variant="contained"
+            color="warning"
+            size="large"
+            href="1"
+            onClick={onSubmitHandler}
+          >
+            Submit
+          </Button>
         </form>
       </div>
     </ContactForm>
