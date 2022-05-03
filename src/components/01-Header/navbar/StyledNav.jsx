@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const NavStyles = styled.nav`
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
   height: 10vh;
   background: var(--primary-light);
@@ -11,12 +11,12 @@ const NavStyles = styled.nav`
   position: relative;
   padding: 0 4rem;
   @media screen and (max-width:800px){
-    padding: 0;
-    padding-right : 2rem;
+    padding: 0 2rem 2rem 0;
+    height: 12vh;
   }
   img {
     width: 15rem;
-    border-radius: 1rem;;
+    border-radius: 1rem;
     
   }
   a,

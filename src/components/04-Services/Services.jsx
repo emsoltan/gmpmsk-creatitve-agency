@@ -74,7 +74,7 @@ const Services = () => {
       <ServiceCards />
       <VidSamples />
       <VidCollection />
-      <ImageSamples />
+      <ImageSamples  />
     </ServicesGrid>
   );
 };

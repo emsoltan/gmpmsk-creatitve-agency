@@ -39,11 +39,7 @@ function Navbar() {
             Services
           </a>
         </li>
-        <li className="nav__item">
-          <a href="#samples" className="nav__link" onClick={navToggle}>
-            Samples
-          </a>
-        </li>
+    
         <li className="nav__item">
           <a href="#contact" className="nav__link" onClick={navToggle}>
             Contact
