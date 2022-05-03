@@ -12,19 +12,19 @@ const StyledComposition = styled(Grid)`
   align-items: center;
   justify-content: center;
   position: relative;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.75);
-  background: url(${bkgPattern}), var(--primary-light);
+  /* box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.75); */
+  background: url(${bkgPattern});
   background-size: cover;
   background-position: top;
-  padding: 6rem 0;
-  border-radius: 20%;
-  transform: skewY(7deg);
+  padding: 4rem 0;
+  border-radius: 1rem;
 
   .composition__photo {
-    max-width: 20rem;
+
+    max-width: 35rem;
     -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.8);
-    border-radius: 0.25rem;
+    border-radius: 1rem;
     z-index: 10;
     -webkit-transition: all 0.2s;
     transition: all 0.2s;
@@ -44,9 +44,9 @@ const StyledComposition = styled(Grid)`
     -webkit-transform: scale(0.95);
     transform: scale(0.95);
   }
-  @media (min-width: 900) {
+  @media (max-width: 800px) {
     .composition__photo {
-      max-width: 10rem;
+      max-width: 30rem;
     }
   }
 `;

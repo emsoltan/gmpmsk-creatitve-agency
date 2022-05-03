@@ -8,6 +8,7 @@ import bkgPattern from "../../assets/img/bg-pattern-desktop.svg";
 
 const StyledComposition = styled.div`
   width: 100%;
+  height: 20vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -15,7 +16,7 @@ const StyledComposition = styled.div`
   border-radius: 2rem;
   animation: moveInRight 1s ease-in-out;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.8);
-  background: url(${bkgPattern});
+  background: url(${bkgPattern}), var(--primary-navy);
   background-size: cover;
   background-position: center;
 
@@ -27,26 +28,25 @@ const StyledComposition = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.8);
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.8);
     padding: 1rem 0;
   }
   img {
-    max-width: 5rem;
+    max-width: 7rem;
     border-radius: 0.75rem;
     background-color: var(--primary-light);
     padding: 1rem;
-    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.35);
   }
   .MuiTypography-h6 {
     color: var(--primary-light);
     text-transform: uppercase;
     font-weight: 600;
+    font-size:2rem ;
     letter-spacing: 2px;
-    text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.35);
+    margin-bottom: 1rem;
   }
 
   @media screen and (max-width: 600px) {
-    background: url(${bkgPattern}), var(--main-gradient);
     padding: 2rem;
 
     div {

@@ -13,9 +13,9 @@ const StyledHero = styled.div`
   justify-content: flex-start;
   background-image: url(${bkgLG});
   background-size: cover;
-  background-position: top;
+  background-position: center;
   background-repeat: no-repeat;
-  clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
+  /* clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%); */
   backface-visibility: none;
   margin-bottom: 15rem;
 `;

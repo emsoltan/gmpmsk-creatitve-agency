@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import Header from "./components/01-Header/Header";
+import Navbar from "./components/01-Header/navbar/Navbar";
 import Hero from "./components/02-Hero/Hero";
 import About from "./components/03-About/About";
 import Services from "./components/04-Services/Services";
@@ -41,14 +41,14 @@ const App = () => {
   });
   return (
     <ThemeProvider theme={theme}>
-      <Header />
+      <Navbar />{" "}
       <main>
         <Hero />
         <About />
-        <Services/>
-        <Contact/>
+        <Services />
+        <Contact />
       </main>
-      <Footer/>
+      <Footer />
     </ThemeProvider>
   );
 };
