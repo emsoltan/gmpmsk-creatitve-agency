@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import { Button } from "@mui/material";
 import bkgPattern from "../../assets/img/bg-pattern-desktop.svg";
+import { Button } from "@mui/material";
 
 const onSubmitHandler = (e) => e.preventDefault();
 const ContactForm = styled.div`
@@ -55,10 +55,10 @@ const ContactForm = styled.div`
       }
       .MuiButton-root {
         font-size: 1.6rem;
-        min-width: 35%;
+        min-width: 25%;
         letter-spacing: 3px;
-        font-weight: 600;
         color: var(--primary-light);
+        font-weight: 600;
         margin: 1rem auto;
         animation: moveInBottom 1s ease-in-out;
         box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.8);
@@ -126,15 +126,9 @@ const Contact = () => {
           </div>
           <label htmlFor="message">Message</label>
           <textarea value="" onChange={onSubmitHandler} rows="20" cols="100" />
-          <Button
-            variant="contained"
-            color="warning"
-            size="large"
-            href="1"
-            onClick={onSubmitHandler}
-          >
-            Submit
-          </Button>
+          <Button variant="contained" color="warning" size="large">
+            Submit{" "}
+          </Button>{" "}
         </form>
       </div>
     </ContactForm>

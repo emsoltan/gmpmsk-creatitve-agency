@@ -44,6 +44,7 @@ const StyledIntro = styled.div`
     font-size: 1.6rem;
     min-width: 25%;
     letter-spacing: 3px;
+    color: var(--primary-light);
     font-weight: 600;
     margin-top: 1rem;
     animation: moveInBottom 1s ease-in-out;
@@ -78,8 +79,8 @@ const Intro = () => {
         <Typography variant="body1">Your brand's one-stop-shop</Typography>
       </Typography>
       <Composition />
-      <Button variant="contained" color="warning" size="large" href="#services">
-        Read more
+      <Button variant="contained" color="warning" size="large">
+        See More
       </Button>
     </StyledIntro>
   );

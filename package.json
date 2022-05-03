@@ -33,18 +33,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "description": "Project Overview :",
-  "main": "index.js",
-  "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/emsoltan/gmpmsk-creatitve-agency.git"
-  },
-  "author": "e-mad",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/emsoltan/gmpmsk-creatitve-agency/issues"
-  },
-  "homepage": "https://github.com/emsoltan/gmpmsk-creatitve-agency#readme"
+  }
 }
