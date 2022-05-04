@@ -139,10 +139,9 @@ const StyledFooter = styled.footer`
     margin-bottom: 1rem;
     text-transform: capitalize;
     letter-spacing: 2px;
-    font-weight: 600;
     color: var(--primary-light);
     padding: 0.5rem;
-    border-radius: 1rem;
+    /* border-radius: 1rem; */
     @media screen and (max-width: 800px) {
       background-color: var(--primary-navy);
     }
