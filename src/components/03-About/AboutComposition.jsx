@@ -3,8 +3,8 @@ import styled from "styled-components";
 import { Grid } from "@mui/material";
 import marketing1 from "../../assets/img/marketingplan.png";
 import marketing2 from "../../assets/img/socialmedia.png";
-import design from "../../assets/img/webdev.png";
-import design2 from "../../assets/img/webdev.png";
+import design from "../../assets/img/webDev.png";
+import strategy from "../../assets/img/strategy.png";
 import bkgPattern from "../../assets/img/bg-pattern-desktop.svg";
 
 const StyledComposition = styled(Grid)`
@@ -12,6 +12,7 @@ const StyledComposition = styled(Grid)`
   align-items: center;
   justify-content: center;
   position: relative;
+  /* box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.75); */
   background: url(${bkgPattern});
   background-size: cover;
   background-position: top;
@@ -69,7 +70,7 @@ const AboutComposition = () => {
         className="composition__photo composition__photo--p2"
       />
       <img
-        src={design2}
+        src={strategy}
         alt="marketing 2"
         className="composition__photo composition__photo--p3"
       />

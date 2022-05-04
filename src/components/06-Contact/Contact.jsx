@@ -1,23 +1,41 @@
 import React from "react";
 import styled from "styled-components";
-import { Button } from "@mui/material";
+import {Button , Typography} from "@mui/material"
 import bkgPattern from "../../assets/img/bg-pattern-desktop.svg";
 
 const onSubmitHandler = (e) => e.preventDefault();
 const ContactForm = styled.div`
   min-height: 80vh;
   width: 80%;
-  margin: 0 auto;
+  margin: 20rem auto;
   background: url(${bkgPattern}), var(--primary-navy);
   background-size: cover;
   background-position: top;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* padding: 0 4rem; */
+  flex-direction: column;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.8);
   border-radius: 2rem;
-
+  .MuiTypography-h3 {
+    text-align: center;
+    width: max-content;
+    margin: 0 auto;
+    margin-top: 4rem;
+    color: var(--primary-navy);
+    background: var(--primary-light);
+    padding: 1rem 2rem;
+    border-radius: 0.75rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.85);
+    text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.35);
+    margin-bottom: 1rem;
+    @media screen and (max-width: 800px) {
+      font-size: 2rem;
+    }
+  }
   div.container {
     width: 90%;
     form {
@@ -100,6 +118,8 @@ const ContactForm = styled.div`
 const Contact = () => {
   return (
     <ContactForm id="contact">
+      <Typography variant="h3">Contact Us</Typography>
+
       <div className="container">
         <form onClick={onSubmitHandler}>
           <label htmlFor="fname">First Name</label>
@@ -131,7 +151,7 @@ const Contact = () => {
           <label htmlFor="message">Message</label>
           <textarea value="" onChange={onSubmitHandler} rows="20" cols="100" />
           <Button variant="contained" color="warning" size="large">
-            Submit{" "}
+            Submit
           </Button>
         </form>
       </div>

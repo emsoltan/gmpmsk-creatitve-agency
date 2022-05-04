@@ -6,7 +6,7 @@ import bkgLG from "../../assets/img/bg-intro-mobile.svg";
 const StyledHero = styled.div`
   width: 100%;
   height: 100vh;
-  padding: 1rem 0;
+  padding: 3rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -15,7 +15,6 @@ const StyledHero = styled.div`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  /* clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%); */
   backface-visibility: none;
   margin-bottom: 15rem;
 `;

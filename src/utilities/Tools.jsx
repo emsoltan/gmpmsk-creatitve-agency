@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Grid, Typography } from "@mui/material";
+import { Grid, Typography, Button } from "@mui/material";
 
 export const Section = styled(Grid)`
   height: 100vh;
@@ -14,7 +14,5 @@ flex-direction: row;
 border:3px solid red;
 `;
 
-const SectionTitle = styled(Typography)`
-.MuiGrid-item#about-text
 
-`;
+

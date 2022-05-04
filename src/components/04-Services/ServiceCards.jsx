@@ -7,7 +7,7 @@ import design from "../../assets/img/designs.jpg";
 import { Typography } from "@mui/material";
 
 const Cards = styled.div`
-  width: 70%;
+  width: 60%;
   margin: 3rem auto;
   display: grid;
   grid-template-areas:
@@ -18,8 +18,8 @@ const Cards = styled.div`
   grid-gap: 2rem;
   transform: skewY(7deg);
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.85);
-  background: var(--main-gradient);
-  padding: 2rem 0;
+  background:var(--main-gradient);
+  padding: 4rem 0;
   border-radius: 1rem;
 
   @media (max-width: 900px) {
@@ -31,7 +31,6 @@ const Cards = styled.div`
   }
   @media screen and (max-width: 800px) {
     width: 100%;
-    
   }
   .service {
     display: flex;
@@ -57,7 +56,7 @@ const Cards = styled.div`
       grid-area: service4;
     }
     img {
-      width: 100%;
+      width: 80%;
       border-radius: 1rem 1rem 0 0;
       box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.85);
     }
@@ -69,15 +68,15 @@ const Cards = styled.div`
       border-radius: 0 0 0.75rem 0.75rem;
       text-transform: uppercase;
       letter-spacing: 2px;
-      font-size: 1.5rem;
+      font-size: 1.8rem;
       font-weight: 700;
       box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.85);
       text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.35);
-      width: 100%;
+      width: 80%;
       text-align: center;
     }
     .MuiTypography-body1 {
-      font-size: 1.3rem;
+      font-size: 1.8rem;
       padding: 2rem 3rem;
       text-align: center;
     }

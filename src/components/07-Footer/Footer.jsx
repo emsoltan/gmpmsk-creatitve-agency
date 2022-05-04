@@ -19,27 +19,38 @@ const StyledFooter = styled.footer`
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.8);
+
+  @media screen and (max-width: 800px) {
+    height: 45vh;
+    justify-content: space-between;
+  }
 
   img {
     max-height: 7rem;
     border-radius: 1rem;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.8);
+    :hover {
+      box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.4);
+    }
   }
   ul {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     list-style: none;
     color: var(--primary-light);
     font-size: 1.6rem;
     text-transform: uppercase;
     padding: 0 2rem;
-    width: 50vw;
+    margin: 2rem 0;
+    height: 15vh;
 
     li {
-      margin-right: 1rem;
+      margin: 1rem 0;
     }
     a,
     a:before,
@@ -49,7 +60,11 @@ const StyledFooter = styled.footer`
       cursor: pointer;
       padding: 0.5rem 1.5rem;
       border-radius: 0.5rem;
-      box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.8);
+      /* box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.8); */
+      font-size: 2rem;
+      @media screen and (max-width: 800px) {
+        font-size: 1.6rem;
+      }
     }
     li:hover,
     a:hover {
@@ -65,8 +80,10 @@ const StyledFooter = styled.footer`
   }
   .social-nav {
     font-size: 2rem;
-    margin-top: 2rem;
-    width: 15vw;
+    margin-top: 3rem;
+    flex-direction: row;
+    width: 10vw;
+    height: 5vh;
     li {
       background-color: var(--primary-light);
       box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.8);
@@ -82,7 +99,6 @@ const StyledFooter = styled.footer`
     position: relative;
     padding: 0;
     img {
-      max-height: 4rem;
       margin-top: 3rem;
     }
     font-size: 1rem;
@@ -92,15 +108,9 @@ const StyledFooter = styled.footer`
       margin: 0;
       position: relative;
       justify-content: space-around;
-      li {
-        font-size: 0.9rem;
-      }
     }
     .social-nav {
       justify-content: space-around;
-      /* position: absolute;
-      bottom: 10%;
-      left:45%; */
       margin-bottom: 4rem;
     }
   }
@@ -109,7 +119,9 @@ const StyledFooter = styled.footer`
 const Footer = () => {
   return (
     <StyledFooter>
-      <img src={logo} alt="logo" />
+      <a href="/">
+        <img src={logo} alt="logo" />
+      </a>
 
       <div>
         <ul className="footer-nav">

@@ -5,7 +5,7 @@ const NavStyles = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 10vh;
+  height: 12vh;
   background: var(--primary-light);
   z-index: 1000;
   position: fixed;
@@ -16,7 +16,7 @@ const NavStyles = styled.nav`
 
   @media screen and (max-width: 800px) {
     padding: 0 2rem 2rem 0;
-    height: 12vh;
+    height: 10vh;
   }
   img {
     width: 15rem;

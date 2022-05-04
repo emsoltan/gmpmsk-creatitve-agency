@@ -19,12 +19,11 @@ const StyledIntro = styled.div`
     text-transform: uppercase;
     margin-top: 2rem;
     padding: 2rem 4rem;
-    font-size: 5rem;
+    font-size: 6rem;
     font-weight: 900;
     letter-spacing: 4px;
     animation: moveInLeft 1s ease-in-out;
-    text-shadow: 10px 10px 20px rgba(0, 0, 0, 0.8);
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.8);
+    text-shadow: 10px 15px 5px rgba(0  , 0, 0, 0.6);
     border-radius: 2rem;
     background: url(${bkgPattern});
     background-size: cover;
@@ -56,11 +55,14 @@ const StyledIntro = styled.div`
     a {
       color: var(--primary-light);
     }
+    @media screen and (max-width: 800px) {
+      font-size: 2.2rem;
+    }
   }
   @media screen and (max-width: 900px) {
     justify-content: space-around;
     .MuiTypography-h1 {
-      font-size: 4rem;
+      font-size: 5rem;
     }
     .MuiTypography-body1 {
       font-size: 1.8rem;
@@ -82,7 +84,7 @@ const Intro = () => {
         <Typography variant="body1">Your brand's one-stop-shop</Typography>
       </Typography>
       <Composition />
-      <Button variant="contained" color="warning" size="large">
+      <Button variant="contained" color="warning" size="md">
         <a href="#services">See More</a>
       </Button>
     </StyledIntro>
