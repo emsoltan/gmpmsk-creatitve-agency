@@ -35,7 +35,7 @@ const StyledFooter = styled.footer`
     margin: 0 auto;
     @media screen and (max-width: 800px) {
       width: 80%;
-      justify-content: space-around;
+      justify-content: space-evenly;
     }
     img {
       max-height: 7rem;
@@ -91,7 +91,6 @@ const StyledFooter = styled.footer`
       display: flex;
       flex-direction: column;
       align-items: center;
-      border: 1px solid red;
       .social-nav {
         font-size: 2rem;
         margin-top: 3rem;
