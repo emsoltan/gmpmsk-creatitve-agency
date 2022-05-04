@@ -35,7 +35,7 @@ const StyledFooter = styled.footer`
     margin: 0 auto;
     @media screen and (max-width: 800px) {
       width: 80%;
-      justify-content: space-evenly;
+      justify-content: space-between;
     }
     img {
       max-height: 7rem;
@@ -117,6 +117,7 @@ const StyledFooter = styled.footer`
       padding: 0;
       img {
         margin-top: 3rem;
+        max-height: 5rem;
       }
       font-size: 1rem;
       .social-nav {
@@ -139,10 +140,10 @@ const StyledFooter = styled.footer`
     margin-bottom: 1rem;
     text-transform: capitalize;
     letter-spacing: 2px;
-    font-weight: 600;
     color: var(--primary-light);
     padding: 0.5rem;
     border-radius: 1rem;
+    font-size:1.6rem;
     @media screen and (max-width: 800px) {
       background-color: var(--primary-navy);
     }
@@ -191,7 +192,7 @@ const Footer = () => {
       <div className="copyrights">
         <p>
           Copyright <FaCopyright />
-          GMPMSK Creative Agency 2022
+          GMPMSK  2022
         </p>
         <p>
           {" "}
