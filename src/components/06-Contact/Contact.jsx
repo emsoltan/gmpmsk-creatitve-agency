@@ -64,6 +64,9 @@ const ContactForm = styled.div`
         animation: moveInBottom 1s ease-in-out;
         box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.8);
         text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.35);
+        @media screen and (max-width: 800px) {
+          font-size: 1.6rem;
+        }
       }
       input,
       input:before,

@@ -12,7 +12,6 @@ const StyledComposition = styled(Grid)`
   align-items: center;
   justify-content: center;
   position: relative;
-  /* box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.75); */
   background: url(${bkgPattern});
   background-size: cover;
   background-position: top;

@@ -53,6 +53,9 @@ const StyledIntro = styled.div`
     animation: moveInBottom 1s ease-in-out;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.8);
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.35);
+    a {
+      color: var(--primary-light);
+    }
   }
   @media screen and (max-width: 900px) {
     justify-content: space-around;
@@ -80,7 +83,7 @@ const Intro = () => {
       </Typography>
       <Composition />
       <Button variant="contained" color="warning" size="large">
-        See More
+        <a href="#services">See More</a>
       </Button>
     </StyledIntro>
   );

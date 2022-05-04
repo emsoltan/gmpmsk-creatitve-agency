@@ -6,7 +6,6 @@ import AboutComposition from "./AboutComposition";
 const AboutGrid = styled(Grid)`
   /* min-height: 80vh; */
   /* width: 80%; */
-
   margin-bottom: 25rem;
   align-items: center;
   background-color: var(--primary-grey);
@@ -22,7 +21,6 @@ const AboutGrid = styled(Grid)`
     justify-content: space-evenly;
     color: var(--primary-navy);
     background: var(--primary-light);
- 
 
     .MuiTypography-h3 {
       text-align: center;
@@ -41,6 +39,7 @@ const AboutGrid = styled(Grid)`
       margin-bottom: 1rem;
       @media screen and (max-width: 800px) {
         font-size: 2rem;
+        margin: 2rem auto;
       }
     }
     .MuiTypography-body1 {

@@ -8,16 +8,19 @@ const NavStyles = styled.nav`
   height: 10vh;
   background: var(--primary-light);
   z-index: 1000;
-  position: relative;
+  position: fixed;
+  width: 100%;
   padding: 0 4rem;
-  @media screen and (max-width:800px){
+  margin-bottom: 12vh;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
+
+  @media screen and (max-width: 800px) {
     padding: 0 2rem 2rem 0;
     height: 12vh;
   }
   img {
     width: 15rem;
     border-radius: 1rem;
-    
   }
   a,
   a:before,
