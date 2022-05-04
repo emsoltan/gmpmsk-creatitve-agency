@@ -88,6 +88,7 @@ const StyledFooter = styled.footer`
       background-color: var(--primary-light);
       box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.8);
       padding: 0.25rem;
+      margin: 1rem;
       border-radius: 0.25rem;
       color: var(--mag-dark);
       :hover {
