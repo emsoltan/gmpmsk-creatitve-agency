@@ -143,9 +143,10 @@ const StyledFooter = styled.footer`
     color: var(--primary-light);
     padding: 0.5rem;
     border-radius: 1rem;
-    font-size:1.6rem;
+    font-size: 1.6rem;
     @media screen and (max-width: 800px) {
       background-color: var(--primary-navy);
+      font-size: 1.2rem;
     }
   }
 `;
