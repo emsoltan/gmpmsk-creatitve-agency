@@ -6,11 +6,12 @@ import {
   FaTwitterSquare,
   FaFacebookSquare,
   FaInstagramSquare,
+  FaCopyright,
 } from "react-icons/fa";
 
 const StyledFooter = styled.footer`
   width: 100%;
-  height: 40vh;
+  min-height: 40vh;
   padding: 2rem 0;
   margin-top: 10rem;
   background-image: url(${bkgLG});
@@ -60,7 +61,6 @@ const StyledFooter = styled.footer`
       cursor: pointer;
       padding: 0.5rem 1.5rem;
       border-radius: 0.5rem;
-      /* box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.8); */
       font-size: 2rem;
       @media screen and (max-width: 800px) {
         font-size: 1.6rem;
@@ -84,6 +84,8 @@ const StyledFooter = styled.footer`
     flex-direction: row;
     width: 10vw;
     height: 5vh;
+    justify-content: center;
+    align-items: center;
     li {
       background-color: var(--primary-light);
       box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.8);
@@ -94,6 +96,23 @@ const StyledFooter = styled.footer`
       :hover {
         cursor: pointer;
       }
+    }
+  }
+  .copyrights {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    font-weight: 600;
+    background-color: var(--primary-navy);
+    color: var(--primary-light);
+    padding: 0.5rem;
+    border-radius: 1rem;
+    p {
+      padding: 0.75rem 1rem;
     }
   }
   @media screen and (max-width: 800px) {
@@ -155,6 +174,16 @@ const Footer = () => {
             <FaInstagramSquare />
           </li>
         </ul>
+      </div>
+      <div className="copyrights">
+        <p>
+          Copyright <FaCopyright />
+          GMPMSK Creative Agency 2022
+        </p>
+        <p>
+          {" "}
+          <FaCopyright></FaCopyright> e-mad 2022
+        </p>
       </div>
     </StyledFooter>
   );
