@@ -11,7 +11,7 @@ import {
 
 const StyledFooter = styled.footer`
   width: 100%;
-  min-height: 45vh;
+  min-height: 30vh;
   padding: 2rem 0;
   margin-top: 10rem;
   background-image: url(${bkgLG});
@@ -27,74 +27,109 @@ const StyledFooter = styled.footer`
     height: 45vh;
     justify-content: space-between;
   }
-
-  img {
-    max-height: 5rem;
-    border-radius: 1rem;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.8);
-    :hover {
-      box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.4);
-    }
-  }
-  ul {
+  .footer-container {
+    width: 70%;
     display: flex;
-    flex-direction: column;
+    align-items: center;
     justify-content: space-between;
-    align-items: center;
-    list-style: none;
-    color: var(--primary-light);
-    font-size: 1.6rem;
-    text-transform: uppercase;
-    padding: 0 2rem;
-    margin: 2rem 0;
-    height: 15vh;
-
-    li {
-      margin: 1rem 0;
+    margin: 0 auto;
+    @media screen and (max-width: 800px) {
+      width: 80%;
+      justify-content: space-around;
     }
-    a,
-    a:before,
-    a:after {
-      color: var(--primary-light);
-      text-decoration: none;
-      cursor: pointer;
-      padding: 0.5rem 1.5rem;
-      border-radius: 0.5rem;
-      font-size: 2rem;
-      @media screen and (max-width: 800px) {
-        font-size: 1.6rem;
-      }
-    }
-    li:hover,
-    a:hover {
-      background-color: var(--primary-light);
-      color: var(--mag-dark);
-      transition: all 0.3s ease-in-out;
-    }
-  }
-  .footer-nav {
-    letter-spacing: 3px;
-    margin-top: 2rem;
-    width: 70vw;
-  }
-  .social-nav {
-    font-size: 2rem;
-    margin-top: 3rem;
-    flex-direction: row;
-    width: 10vw;
-    height: 5vh;
-    justify-content: center;
-    align-items: center;
-    li {
-      background-color: var(--primary-light);
+    img {
+      max-height: 7rem;
+      border-radius: 1rem;
       box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.8);
-      padding: 0.25rem;
-      margin: 1rem;
-      border-radius: 0.25rem;
-      color: var(--mag-dark);
       :hover {
-        cursor: pointer;
+        box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.4);
       }
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      list-style: none;
+      color: var(--primary-light);
+      font-size: 1.6rem;
+      text-transform: uppercase;
+      padding: 0 2rem;
+      margin: 2rem 0;
+      height: 15vh;
+
+      li {
+        margin: 1rem 0;
+      }
+      a,
+      a:before,
+      a:after {
+        color: var(--primary-light);
+        text-decoration: none;
+        cursor: pointer;
+        padding: 0.5rem 1.5rem;
+        border-radius: 0.5rem;
+        font-size: 2rem;
+        @media screen and (max-width: 800px) {
+          font-size: 1.6rem;
+        }
+      }
+      li:hover,
+      a:hover {
+        background-color: var(--primary-light);
+        color: var(--mag-dark);
+        transition: all 0.3s ease-in-out;
+      }
+    }
+    .footer-nav {
+      letter-spacing: 3px;
+      margin-top: 2rem;
+      width: 70vw;
+    }
+
+    .logo-socialNav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 1px solid red;
+      .social-nav {
+        font-size: 2rem;
+        margin-top: 3rem;
+        flex-direction: row;
+        width: 10vw;
+        height: 5vh;
+        justify-content: center;
+        align-items: center;
+        li {
+          background-color: var(--primary-light);
+          box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.8);
+          padding: 0.25rem;
+          margin: 1rem;
+          border-radius: 0.25rem;
+          color: var(--mag-dark);
+          :hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    @media screen and (max-width: 800px) {
+      position: relative;
+      padding: 0;
+      img {
+        margin-top: 3rem;
+      }
+      font-size: 1rem;
+      .social-nav {
+        justify-content: space-around;
+        margin-bottom: 4rem;
+      }
+    }
+    .footer-nav {
+      width: 10vw;
+      margin: 0;
+      position: relative;
+      justify-content: space-around;
     }
   }
   .copyrights {
@@ -106,31 +141,11 @@ const StyledFooter = styled.footer`
     text-transform: capitalize;
     letter-spacing: 2px;
     font-weight: 600;
-    background-color: var(--primary-navy);
     color: var(--primary-light);
     padding: 0.5rem;
     border-radius: 1rem;
-    p {
-      padding: 0.75rem 1rem;
-    }
-  }
-  @media screen and (max-width: 800px) {
-    position: relative;
-    padding: 0;
-    img {
-      margin-top: 3rem;
-    }
-    font-size: 1rem;
-
-    .footer-nav {
-      width: 10vw;
-      margin: 0;
-      position: relative;
-      justify-content: space-around;
-    }
-    .social-nav {
-      justify-content: space-around;
-      margin-bottom: 4rem;
+    @media screen and (max-width: 800px) {
+      background-color: var(--primary-navy);
     }
   }
 `;
@@ -138,41 +153,41 @@ const StyledFooter = styled.footer`
 const Footer = () => {
   return (
     <StyledFooter>
-      <a href="/">
-        <img src={logo} alt="logo" />
-      </a>
-
-      <div>
-        <ul className="footer-nav">
-          <li>
-            <a href="/">Home</a>
-          </li>
-          <li>
-            <a href="#about">About</a>
-          </li>
-          <li>
-            {" "}
-            <a href="#services">Services</a>
-          </li>
-          <li>
-            {" "}
-            <a href="#press">Press</a>
-          </li>
-        </ul>
-      </div>
-
-      <div>
-        <ul className="social-nav">
-          <li>
-            <FaTwitterSquare />
-          </li>
-          <li>
-            <FaFacebookSquare />
-          </li>
-          <li>
-            <FaInstagramSquare />
-          </li>
-        </ul>
+      <div className="footer-container">
+        <div className="logo-socialNav">
+          <a href="/">
+            <img src={logo} alt="logo" />
+          </a>
+          <ul className="social-nav">
+            <li>
+              <FaTwitterSquare />
+            </li>
+            <li>
+              <FaFacebookSquare />
+            </li>
+            <li>
+              <FaInstagramSquare />
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul className="footer-nav">
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              {" "}
+              <a href="#services">Services</a>
+            </li>
+            <li>
+              {" "}
+              <a href="#press">Press</a>
+            </li>
+          </ul>
+        </div>
       </div>
       <div className="copyrights">
         <p>
