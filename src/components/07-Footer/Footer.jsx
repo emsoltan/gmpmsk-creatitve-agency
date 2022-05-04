@@ -34,8 +34,8 @@ const StyledFooter = styled.footer`
     justify-content: space-between;
     margin: 0 auto;
     @media screen and (max-width: 800px) {
-      width: 80%;
-      justify-content: space-evenly;
+      width: 100%;
+      justify-content: space-between;
     }
     img {
       max-height: 7rem;
