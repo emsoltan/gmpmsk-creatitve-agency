@@ -11,7 +11,7 @@ import {
 
 const StyledFooter = styled.footer`
   width: 100%;
-  min-height: 40vh;
+  min-height: 45vh;
   padding: 2rem 0;
   margin-top: 10rem;
   background-image: url(${bkgLG});
@@ -22,7 +22,6 @@ const StyledFooter = styled.footer`
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.8);
 
   @media screen and (max-width: 800px) {
     height: 45vh;
@@ -103,7 +102,7 @@ const StyledFooter = styled.footer`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     text-transform: capitalize;
     letter-spacing: 2px;
     font-weight: 600;
