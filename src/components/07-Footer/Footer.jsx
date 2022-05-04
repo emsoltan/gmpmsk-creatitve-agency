@@ -29,7 +29,7 @@ const StyledFooter = styled.footer`
   }
 
   img {
-    max-height: 6rem;
+    max-height: 5rem;
     border-radius: 1rem;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.8);
     :hover {
