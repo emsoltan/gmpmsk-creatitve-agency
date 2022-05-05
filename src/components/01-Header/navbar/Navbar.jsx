@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-// import "../navbar.css";
 import StyledNav from "./StyledNav";
 import HeaderLogo from "../../../assets/img/logo-header.jpg";
 
