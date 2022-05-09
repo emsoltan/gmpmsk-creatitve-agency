@@ -25,17 +25,13 @@
   backface-visibility: none;
   font-family: "Lato", sans-serif;
 }
-*,
-*::after,
-*::before {
-  margin: 0;
-  box-sizing: border-box;
-}
+
 html {
   font-size: 62.5%;
 }
 body {
-  font-size: 1.6rem;
+    background: var(--primary-light);
+
 }
 li {
   list-style: none;
@@ -43,10 +39,7 @@ li {
 a {
   text-decoration: none;
 }
-body {
-  background: var(--primary-light);
-  /* font-size: 68.5%; */
-}
+
 main {
   /* width: 75%; */
   margin: 0 auto;

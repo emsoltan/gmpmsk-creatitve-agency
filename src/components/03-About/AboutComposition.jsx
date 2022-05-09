@@ -12,7 +12,6 @@ const StyledComposition = styled(Grid)`
   align-items: center;
   justify-content: center;
   position: relative;
-  /* box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.75); */
   background: url(${bkgPattern});
   background-size: cover;
   background-position: top;
@@ -20,7 +19,6 @@ const StyledComposition = styled(Grid)`
   border-radius: 1rem;
 
   .composition__photo {
-
     max-width: 35rem;
     -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.8);

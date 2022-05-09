@@ -5,12 +5,11 @@ const NavStyles = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 12vh;
   background: var(--primary-light);
   z-index: 1000;
   position: fixed;
   width: 100%;
-  padding: 0 4rem;
+  padding: 1rem 4rem;
   margin-bottom: 12vh;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.8);
 
@@ -32,6 +31,7 @@ const NavStyles = styled.nav`
     letter-spacing: 2px;
     padding: 1rem 1.5rem;
     border-radius: 0.25rem;
+    font-size: 1.4rem;
   }
   li {
     &:hover > a {
